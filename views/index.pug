@@ -1,0 +1,78 @@
+extends layout
+
+
+block content
+  include includes/header.pug
+  .heading.container
+    .line
+    h1.h1-heading Apie Rdsiuvykla 
+    .line
+  section#about-container.container
+    .about-image
+      img(src='images/siuveja-rasita-v5.png')
+    .about-info
+      h1 Apie Mus
+      p
+        | Rdsiuvykla.lt – esame neseniai įsikūrusi siuvimo mokykla. Pagrindinės mūsų teikiamos paslaugos siuvimo kursai:
+      ul.about-info-ul
+        li  * Siuvimo Kursai pradedantiesiems. 
+        li  * Siuvimo kursai pažengusiems. 
+        li  * Individualios/ vienkartinės konsultacijos.
+      p
+        | Mūsų tikslas išmokyti visus norinčius siūti, ar pasisiūsit norima rūbeli. Mūsų lektoriai turi didelę patirtį drabužių siuvime todėl nesvarbu ar jūsų jau turite siuvimo patirties ar ne mes tikrai jums padėsime patobulinti savo įgūdžius.
+      ul.about-info-social-ul
+        li
+          a(href='https://www.facebook.com/RDSiuvykla.lt/', target="_blank")
+            img(src='images/icons/fb-black.png')
+        li
+          a(href='https://www.instagram.com/rdsiuvykla/', target="_blank")
+            img(src='images/icons/instagram-black.png')
+
+  .heading.container
+    .line
+    h1.h1-heading Kursai
+    .line
+  section#courses-container.container
+    .courses-box.box-right
+      .courses-image.box-right-image
+        img(src='images/sicssors-cutting-fabric-topdown.png')
+      .courses-info
+        h1 Siuvimo kursai pradedantiesiems
+        p
+          | Siuvimo kursai pagal programą pradedantiesiems yra skirti nemokantiems siūti.
+          | Šio kurso eigoje išmoksite naudotis siuvimo bei apmėtymo įranga, susipažinsite su gaminio iškarpomis, figūros išmatavimais.
+          | Taip pat išmoksite įsiūti užtrauktuką į kelnes, sijoną, suknelę, striukę ir kt.
+          | Pasisiūsite sau norimą gaminį!
+        p
+          | Kursų Kainą: 15 užsiėmimų po 3val. (210 eu)
+        a.btn.courses-btn(href='/registruokis') REGISTRUOKIS
+    .courses-box
+      .courses-image
+        img(src='images/sewing-machine-needle-close-up.png')
+      .courses-info
+        h1 Siuvimo kursai pažengusiems!
+        p Informacija ruosiama...
+        a.btn.courses-btn(href='/registruokis') REGISTRUOKIS
+    .courses-box.box-right
+      .courses-image.box-right-image
+        img(src='images/sewing-machine-knobs.png')
+      .courses-info.courses-info-right
+        h1 Individualios/vienkartinės konsultacijos!
+        p
+          | Dėl individualių/vienkartinių konsultacijų susisiekite su mumis. Susisiekę su mumis galėsite papasakoti savo poreikius ir męs jums paskirsime konsulatcijos laiką bei datą.
+        a.btn.courses-btn(href='/registruokis') REGISTRUOKIS
+
+  section#extra-services
+    .extra-container.container
+      .about-image
+        img(src='images/siuveja-daiva-v2.png')
+      .extra-sewing.box
+        h1 Siuvimo paslaugos
+        p
+          | Teikiame įvairias siuvimo paslaugas pagal individualius užsakymus. Turime didelę patirtį drabužių siuvime bei modeliavime!
+        button.btn-extra.btn(onclick="window.location.href='siuvimo-paslaugos'")  Daugiau informacijos 
+      .extra-sewing.box
+        h1 Drabužių taisymas
+        p Atliekame drabužių taisymo paslaugas.
+        button.btn-extra.btn(onclick="window.location.href='/drabuziu-taisymas'")  Daugiau informacijos 
+  include includes/footer.pug

@@ -1,0 +1,62 @@
+extends layout
+
+
+block content
+    include includes/header.pug
+    .heading.container
+        .line
+        h1.h1-heading Drabužių taisymas
+        .line
+    .sewing-services-container.container
+
+    table
+        caption Drabužiū taisymos kainos
+        thead
+            tr
+            th(scope='col') Paslauga:
+            th(scope='col') Paslaugos kainą:
+        tfoot
+            tr
+            td(colspan='2') SKUBUS PASLAUGU ATLIKIMAS 20% BRANGIAU!
+        tbody
+            tr
+            td(scope='row') Kelnių apačios lenkimas 
+            td 4 - 6 eur.
+            tr
+            td(scope='row') Sijono apačios lenkimas 
+            td 4 - 6 eur.
+            tr
+            td(scope='row') Švarko apačios lenkimas
+            td 8 – 9 eur.
+            tr
+            td(scope='row') Švarko rankovių apačios lenkimas 
+            td 5 – 7 eur.
+            tr
+            td(scope='row') Palto apačios lenkimas 
+            td 10 – 15 eur.
+            tr
+            td(scope='row') Palto rankovių apačios lenkimas 
+            td 6 – 7 eur.
+            tr
+            td(scope='row') Užtrauktuko įsiuvimas į kelnes ar sijoną 
+            td 5 eur.
+            tr
+            td(scope='row') Užtrauktuko įsiuvimas i striukę iki 60cm
+            td 8 eur.
+            tr
+            td(scope='row') Užtrauktuko įsiuvimas į striukę nuo 65cm
+            td 10 – 15 eur.
+            tr
+            td(scope='row') Užuolaidų juostelės prisiuvimas
+            td 1,20 eur už metrą.
+            tr
+            td(scope='row') Užuolaidų apačios ir šonų atsiuvimas 
+            td 1 eur už metrą.
+            tr
+            td(scope='row') Sagos prisiuvimas
+            td 0,5 euro cnt.
+            tr
+            td(scope='row') Kilpos padarymas
+            td 0,50 euro cnt.
+
+    include includes/footer.pug

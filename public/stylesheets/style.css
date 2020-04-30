@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDEDED;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* BTN Styles */
+
+.btn {
+    background-color: #23232D;
+    border: 1px solid #BFA16B;
+    border-radius: 8px;
+    color: #BFA16B;
+    cursor: pointer;
+}
+
+#hamburger-btn {
+    background-image: url('../images/icons/down-arrow.png');
+    padding: 20px;
+    background-size: cover;
+
+    border: inherit;
+}
+
+
+/* Heading Styles */
+.heading {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 60px;
+}
+
+    .h1-heading {
+        text-align: center;
+        text-transform: uppercase;
+
+        font-size: 1.875rem;
+        
+    }
+
+    .line {
+        position: relative;
+        height: 5px;
+        min-width: 15%;
+        
+        border-bottom: 3px solid #23232D;
+
+        padding-top: 35px;
+    }
+
+        .line::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 98%;
+            border-bottom: 1px solid #23232D;
+
+            padding: 4px;
+
+        }
+
+/* Connection Top Section*/
+
+#connect {
+    background-color: #23232D;
+    min-height: 50px;
+
+    display: block;
+}
+
+    .connect-contacts,
+    .connect-social {
+        display: none;
+    }
+    .connect-container .connect-logo {
+        background-color: #BFA16B;
+
+        position: absolute;
+        top: 0;
+        left: 35%;
+        transform: translate(-0, -42%);
+
+        height: 51px;
+    }
+
+    .connect-logo {
+        color: #23232D;
+    }
+
+    .connect-container h1 {
+        padding: 8px 10px 0 10px;
+        font-size: 1.875rem;
+    }
+
+/* Top Nav Section */
+nav {
+    color: #23232D;
+    font-size: 1.25rem;
+    text-align: center;
+
+    font-size: 1rem;
+
+    transition: display 0.5s ease;
+
+    position: relative;
+
+}
+
+#nav-container {
+    transition: height 1s;
+    height: 0px;
+}
+
+    nav ul, li {
+        list-style-type: none;
+        display: block;
+        
+    }
+
+    nav li {
+        padding: 15px;
+        border-bottom: 1px solid #BFA16B;
+    }
+
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #23232D;
+    }
+
+    #links {
+        display: block;
+    }
+
+/* Header */
+header {
+    background-image: url('../images/header.png');
+    background-size: cover;
+    min-height: 480px;
+    position: relative;
+
+}
+    .header-text-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        text-align: center;
+        color: #BFA16B;
+    }
+
+    .header-text-container::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        background-color: #23232D;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        opacity: .8;
+    }
+
+    .header-text-container h1 {
+        padding: 60px 30px 0 30px;
+        position: relative;
+        font-size: 1.875rem;
+
+        font-weight: lighter;
+    }
+
+    .header-text-container h1::after {
+        content: '';
+        position: absolute;
+        top: 10%;
+        left: 50%;
+
+        transform: translate(-50%, -10%);
+        padding-top: 30px;
+
+        width: 70%;
+        height: 100%;
+
+        border-bottom: 3px solid #fff;
+        z-index: 111;
+    }
+
+    .header-text-container h2 {
+        font-size: 2.3rem;
+        font-weight: lighter;
+
+        padding: 30px 10px 10px 10px;
+    }
+
+    .header-text-container p {
+        padding: 30px 20px 30px 20px;
+        font-size: 1.25rem;
+    }
+
+    .btn-header {
+        padding: 17px 25px;
+    }
+/* About US */
+#about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 50px;
+
+    text-align: center;
+}
+
+    .about-info {
+        padding-left: 30px;
+    }
+
+    .about-image {
+        border: 1px solid #23232D;
+        position: relative;
+        z-index: 1;
+
+        margin: 10px 0;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 300px;
+        width: 300px;
+    }
+
+    .about-image img {
+        height: 100%;
+    }
+
+    .about-image::after {
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 10px;
+        border: 1px solid #23232D;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .about-image::before {
+        position: absolute;
+        content: '';
+        top: -10px;
+        left: -10px;
+        border: 1px solid #23232D;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+    }
+
+    .about-info h1 {
+        text-decoration: underline;
+        text-underline-offset: 15px;
+    }
+
+    .about-info-ul ul,
+    .about-info-ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    .about-info-social-ul {
+        padding-top: 20px;
+    }
+
+    .about-info-social-ul li {
+        padding-right: 10px;
+        display: inline;
+
+    }
+
+    .about-info-social-ul a {
+        text-decoration: none;
+    }
+
+/* Courses */
+#courses-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        padding: 0 50px;
+    
+        text-align: center;
+}
+
+    .courses-box {
+        margin: 30px 0;
+    }
+
+    .courses-box p {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .courses-btn {
+        padding: 10px 30px;
+    }
+
+    .courses-btn a {
+        margin-top: 10px;
+    }
+
+/* Sewing services */
+.sewing-services-container {
+    text-align: center;
+    padding: 40px;
+}
+
+/* ---------- Table / Page (Siuvimo Paslaugos) ---------- */
+
+
+table {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  td,
+  th {
+    padding: 10px;
+  }
+  
+  thead {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size:  1.1rem;
+  }
+  
+  tfoot {
+    font-size: 0.8rem;
+    color: red;
+    font-style: italic;
+  }
+  
+  caption {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0 0 10px 0;
+  }
+
+/* Extra Services */
+#extra-services {
+    height: 520px;
+    margin-top: 60px;
+
+    position: relative;
+}
+
+#extra-services::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-image: url('../images/extraheader.png');
+    background-size: cover;
+    opacity: 0.5;
+    height: 520px;
+    width: 100%;
+
+    z-index: -111;
+}
+
+    .extra-container {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .box {
+        width: 30%;
+        background-color: #F8F8F8;
+        text-align: center;
+        color: #937A4C;
+        height: 100%;
+        padding: 20px;
+
+        display: none;
+    }
+
+    .box h1 {
+        font-size: 1.25rem;
+    }
+
+    .box p {
+        font-size: 0.9375rem;
+        line-height: 1.4rem;
+    }
+
+    .btn-extra {
+        padding: 16px 15px;
+        margin: 20px;
+    }
+
+    /* Footer */
+    footer {
+        border-top: 1px solid #BFA16B;
+        text-align: center;
+
+        display: block;
+        justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 0;
+
+    }
+
+    .footer-contact {
+        display: block;
+    }
+
+    .footer-contact li{
+        display: block;
+    }
+
+    .footer-contact ul {
+        padding-top: 20px;
+    }
+
+    .footer-contact ul:nth-child(n + 3) {
+        padding-left: 20px;
+    }
+
+    .footer-contact li:nth-child(1) {
+        color: #BFA16B;
+    }
+
+    .footer-duk,
+    .footer-follow {
+        margin-top: 30px;
+    }
+
+    .footer-duk a{
+        color: #BFA16B;
+        text-decoration: none;
+    }
+
+    .footer-duk h2 {
+        padding-bottom: 20px;
+    }
+
+    .footer-duk li {
+        display: block;
+        padding: 5px;
+    }
+
+    .footer-follow a {
+        color: #BFA16B;
+        text-decoration: none;
+    }
+
+    .footer-follow li{
+        padding-left: 10px;
+        display: inline;
+    }
+
+    .footer-follow h2 {
+        padding-bottom: 20px;
+    }
+
+
+    /* Contact Form */
+
+    .contact-form {
+        display: block;
+    }
+    .contact-form form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 40px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+
+    .btn-form {
+       padding: 10px; 
+       margin-top: 10px;
+    }
+
+    .gallery-images {
+        margin: 30px;
+        text-align: center;
+    }
+    .gallery-images img {
+        transition: 1s;
+        padding: 15px;
+        width: 200px;
+    }
+
+    .gallery-images img:hover {
+        filter: grayscale(100%);
+        transform: scale(1.1);
+    }
+
+    .register {
+        padding: 30px 0;
+    }
+
+    .register form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register input {
+        padding: 10px;
+    }
+
+    .register label {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .register select {
+        padding: 10px;
+    }
+
+    .register p {
+        padding-bottom: 10px;
+    }
+
+    .btn-register {
+        padding: 10px 30px;
+        margin-top: 10px;
+    }
+
+    .msg-heading {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+
+/* Media Queries */
+@media only screen and (min-width: 900px) {
+
+    #hamburger-btn {
+        display: none;
+    }
+
+    #links {
+        display: inline;
+    }
+    /* Heading */
+    .line {
+        min-width: 35%;
+    }
+
+    #connect {
+        display: block;
+        max-height: 50px;
+    }
+    .connect-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .connect-container ul, li {
+        display: inline;
+        padding-top: 15px;
+    }
+
+
+    .connect-container .connect-logo {
+        position: absolute;
+        top: 0;
+        left: 43%;
+        transform: translate(-0, -42%);
+    }
+
+    .connect-social li,
+    .connect-contacts li {
+        padding: 10px;
+    }
+
+    /* Top Nav Section */
+    nav {
+        padding: 20px 0;
+    
+        color: #23232D;
+        font-size: 1.25rem;
+        text-align: center;
+    
+        font-size: 1rem;
+    }
+
+    #nav-container {
+        height: auto;
+    }
+    
+        nav ul, li {
+            list-style-type: none;
+            display: inline;
+        }
+    
+        nav li {
+            padding-right: 30px;
+            border: inherit;
+        }
+    
+        nav a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #23232D;
+        }
+    /* Header  */
+    .header-text-container {
+        position: absolute;
+        right: 40px;
+        top: 0;
+
+        width: 40%;
+        height: 100%;
+        z-index: 1;
+
+        text-align: center;
+        color: #BFA16B;
+    }
+
+    .header-text-container::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        background-color: #23232D;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        opacity: .8;
+    }
+
+    /* About us */
+    #about-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0 50px;
+    
+        text-align: left;
+    }
+
+    /* Courses */
+    .courses-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-right-image {
+        order: 2;
+    }
+
+    .box-right {
+        text-align: left;
+    }
+    .courses-info {
+        text-align: left;
+        padding: 20px;
+    }
+    .courses-info-righ {
+        padding: 20px;
+    }
+
+
+    .box {
+        display: inline;
+        margin-left: 15px;
+    }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #BFA16B;
+            text-align: center;
+    
+            display: block;
+            justify-content: center;
+        }
+    
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 40px 0;
+    
+        }
+
+        .register {
+            text-align: center;
+        }
+
+        .register form{
+            padding: 30px 0;
+            width: 30%;
+            text-align: left;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+}

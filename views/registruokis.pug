@@ -1,0 +1,31 @@
+extends layout
+
+
+block content
+    include includes/header.pug
+
+    .heading.container
+        .line
+        h1.h1-heading Registruokis
+        .line
+    section.register.container
+        p
+            | Norėdami užsiregistruoti į kursus galite skambinti telefonu: +370 650 22483 ar užpildę formą apačioje.
+        p Po formos užpildymo mes su jumis susisieksime per 2 darbo dienas.
+        h3.msg-heading= msg
+        form(method="post" action='registruokis')
+            label(for='name') Jūsų vardas
+            input(name='name', type='text', placeholder='Jūsų vardas')
+            label(for='name') Jūsų El.pašto adresas
+            input(name='email', type='email', placeholder='Jūsų El.pašto adresas')
+            label(for='name') Jūsų Telefono Numbers
+            input(name='number', type='number', placeholder='Jūsų Telefono Numbers')
+            label(for='option') Pasiriknite kursą
+            select#option(name='courses')
+                option(value='Siuvimo kursai pradedantiesiems') Siuvimo kursai pradedantiesiems
+                option(value='Siuvimo kursai pažengusiems') Siuvimo kursai pažengusiems
+                option(value='Invidualios/Vienkartinės konsulatcijos') Invidualios/Vienkartinės konsulatcijos
+            button.btn-register.btn(type='submit') Siūsti
+
+
+    include includes/footer.pug

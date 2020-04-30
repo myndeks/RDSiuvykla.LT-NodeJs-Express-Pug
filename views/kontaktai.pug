@@ -1,0 +1,25 @@
+extends layout
+
+
+block content
+    include includes/header.pug
+    .heading.container
+        .line
+        h1.h1-heading Kontaktai
+        .line
+    section.contact-form.container
+        h3.msg-heading= msg
+        form(method="post" action='kontaktai')
+            label(for='text') Jūsų Vardas
+            input(name='name' type='text', placeholder='Įveskite savo Vardą')
+
+            label(for='email') El.pašto adreas
+            input(name='email' type='email', placeholder='Įveskite savo El.pašto adresą')
+
+            label(for='phoneNumber') Telefono numeris
+            input(name='phoneNumber' type='text', placeholder='Įveskite telefono numerį')
+            
+            label(for='textfield') Jūsų tekstas
+            textarea(name='textfield', id='', cols='30', rows='10', placeholder='Jūsų tekstas')
+            button.btn-form.btn(type='submit') Siūsti
+    include includes/footer.pug
