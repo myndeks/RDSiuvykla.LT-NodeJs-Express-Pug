@@ -468,6 +468,7 @@ table {
 
     .footer-contact li{
         display: block;
+        padding-top: 10px;
     }
 
     .footer-contact ul {
