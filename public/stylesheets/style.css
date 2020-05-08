@@ -338,6 +338,10 @@ header {
     .courses-image img {
         width: 100%;
     }
+    
+    .courses-info h1 {
+        font-size: 1.7em;
+    } 
 
 /* Sewing services */
 .sewing-services-container {
@@ -717,6 +721,10 @@ table {
         display: flex;
         flex-direction: row;
     }
+
+    .courses-info h1 {
+        font-size: 2em;
+    } 
 
     .box-right-image {
         order: 2;
