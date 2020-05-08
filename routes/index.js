@@ -15,28 +15,28 @@ function asyncHandler(cb){
 
 /* GET home page. */
 router.get('/', asyncHandler(async (req, res, next) =>{
-  res.render('index');
+  res.render('index', {title: "Siuvimo Kursai - RDSiuvykla.LT" });
 }));
 
 // Get gallery page
 router.get('/galerija', asyncHandler(async (req, res, next) => {
-  res.render('galerija');
+  res.render('galerija',  {title: "Galerija - RDSiuvykla.LT" });
 }));
 
 // Get siuvimo-paslaugos page
 router.get('/siuvimo-paslaugos', asyncHandler(async (req, res, next) => {
-  res.render('siuvimo-paslaugos');
+  res.render('siuvimo-paslaugos',  {title: "Siuvimo paslaugos - RDSiuvykla.LT" });
 }));
 
 // Get drabuziu-taisymas page
 router.get('/drabuziu-taisymas', asyncHandler(async (req, res, next) => {
-  res.render('drabuziu-taisymas');
+  res.render('drabuziu-taisymas',  {title: "Drabužių taisymas - RDSiuvykla.LT" });
 }));
 
 
 // Get register form page
 router.get('/registruokis', asyncHandler(async (req, res, next) => {
-  res.render('registruokis');
+  res.render('registruokis',  {title: "Registracija - RDSiuvykla.LT" });
 }));
 
 // Send register email to rasita@rdsiuvykla.lt
@@ -84,7 +84,7 @@ router.post('/registruokis', asyncHandler (async (req, res) => {
 
 // Get kontaktai routers
 router.get('/kontaktai', asyncHandler(async (req, res, next) => {
-  res.render('kontaktai');
+  res.render('kontaktai',  {title: "Kontaktai - RDSiuvykla.LT" });
 }));
 
 // Send Email from kontaktai form

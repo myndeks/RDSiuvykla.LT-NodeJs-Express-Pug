@@ -13,7 +13,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 80;
 
 app.use(logger('dev'));
 app.use(express.json());

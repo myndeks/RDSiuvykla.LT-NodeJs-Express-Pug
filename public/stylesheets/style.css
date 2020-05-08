@@ -449,7 +449,10 @@ table {
         flex-direction: column;
         justify-content: center;
         padding: 40px 0;
+    }
 
+    .footer a {
+        color: #937A4C;
     }
 
     .footer-contact {
